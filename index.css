@@ -3,13 +3,24 @@ img {
     height:auto;
 }
 body {
-    background-color: #45525f;
+    background-color: #596979;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer";
+    grid-template-rows: 1fr 80px;
+}
+main {
+    grid-area: main;
 }
 .header {
+    background-color: #45525f;
     color: ghostwhite;
     font-family: "Roboto Condensed", bold;
     margin: 0;
-    padding: 0;
+    padding: 1px;
 }
 .navbar {
     background-color: #2b333b;
@@ -27,6 +38,19 @@ li a {
     padding: 16px;
     text-decoration: none;
 }
+.currentNavSelection {
+    background-color: #596979;
+}
 li a:hover {
-    background-color: black;
+    background-color: #15191d;
+}
+a {
+    color: #ffff00;
+}
+footer {
+    background-color: #45525f;
+    color: ghostwhite;
+    font-family: "Roboto Condensed", normal;
+    font-size: small;
+    grid-area: footer;
 }
