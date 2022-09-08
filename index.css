@@ -6,14 +6,6 @@ body {
     background-color: #596979;
     margin: 0;
     height: 100%;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "main" "footer";
-    grid-template-rows: 1fr 80px;
-}
-main {
-    grid-area: main;
 }
 .header {
     background-color: #45525f;
@@ -52,5 +44,4 @@ footer {
     color: ghostwhite;
     font-family: "Roboto Condensed", normal;
     font-size: small;
-    grid-area: footer;
 }
